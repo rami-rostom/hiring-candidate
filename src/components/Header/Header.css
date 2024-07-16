@@ -3,16 +3,23 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-bottom: 3rem;
+  padding: 1rem 5rem;
+  border-bottom: 1px solid black;
+}
+
+.header__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 .header__name {
+  font-weight: 600;
   opacity: 70%;
 }
 
 .header__name:hover {
   opacity: 100%;
-  color: #0062ff;
   transition-duration: 500ms;
 }
 

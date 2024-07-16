@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { DataType } from '../../@types/data';
 
+import './Game.css';
+
 function Game() {
   const [data, setData] = useState<DataType>();
   const [answer, setAnswer] = useState<string>();
