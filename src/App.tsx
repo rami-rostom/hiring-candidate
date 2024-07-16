@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import logo  from './assets/dataleon.svg';
 
 import './styles/App.css';
 
@@ -13,13 +14,16 @@ function App() {
       .catch((error) => console.error('No data found', error));
   }, []);
 
-  console.log(data);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Dataleon Test</p>
+    <div className='app'>
+      <header className='header'>
+        <img src={logo} alt='Logo Dataleon' />
+        <h1>Hiring Quiz</h1>
       </header>
+
+      <main className='main'>
+        
+      </main>
     </div>
   );
 }
