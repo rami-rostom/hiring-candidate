@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import Header from './components/Header/Header';
+import { DataState } from '../../@types/data';
+import Header from '../Header/Header';
 
-import './styles/App.css';
+import './App.css';
 
 function App() {
-  const [data, setData] = useState('');
+  const [data, setData] = useState<DataState>();
 
   // Fetch datas from json file
   useEffect(() => {
@@ -19,8 +20,8 @@ function App() {
       {/* Import header component */}
       <Header />
 
-      <main className='main'>
-
+      <main className='game'>
+        <h2 className="game__question">{data?.question}</h2>
       </main>
     </div>
   );
