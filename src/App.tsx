@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logo  from './assets/dataleon.svg';
+import Header from './components/Header/Header';
 
 import './styles/App.css';
 
@@ -16,13 +16,11 @@ function App() {
 
   return (
     <div className='app'>
-      <header className='header'>
-        <img src={logo} alt='Logo Dataleon' />
-        <h1>Hiring Quiz</h1>
-      </header>
+      {/* Import header component */}
+      <Header />
 
       <main className='main'>
-        
+
       </main>
     </div>
   );
