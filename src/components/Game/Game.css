@@ -2,9 +2,49 @@
   display: flex;
   flex-direction: column;
 
+  padding: 2rem 0;
   gap: 1rem;
 }
 
 .game__question {
   color: #0062ff;
+}
+
+.game__answers {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.game__answers-button {
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  padding: 0 0.5rem;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.game__answers-button:hover {
+  transition-duration: 600ms;
+  box-shadow: 4px 4px 0 #0062ff;
+}
+
+/* Result answer animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.game__result {
+  opacity: 0;
+  animation: fadeInDown 0.5s ease 0.2s forwards;
 }
