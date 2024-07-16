@@ -1,3 +1,4 @@
+import Footer from '../Footer/Footer';
 import Game from '../Game/Game';
 import Header from '../Header/Header';
 
@@ -11,6 +12,9 @@ function App() {
 
       {/* Import game component */}
       <Game />
+
+      {/* Import footer component */}
+      <Footer />
     </div>
   );
 }
