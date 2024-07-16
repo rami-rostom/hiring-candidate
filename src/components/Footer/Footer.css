@@ -5,6 +5,9 @@
 
   padding: 1rem 5rem;
   font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__item {
