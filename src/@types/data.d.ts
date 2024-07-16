@@ -1,4 +1,4 @@
-export type DataState = {
+export type DataType = {
   question: string;
   answers: string[];
 }

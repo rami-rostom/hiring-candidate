@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { DataState } from '../../@types/data';
+import { DataType } from '../../@types/data';
 
 function Game() {
-  const [data, setData] = useState<DataState>();
+  const [data, setData] = useState<DataType>();
   const [answer, setAnswer] = useState<string>();
 
   // Fetch datas from json file
