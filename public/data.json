@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "question": "Do you like React ?",
+  "answers": [
+    "Good choice !",
+    "Damn !"
+  ]
+}
